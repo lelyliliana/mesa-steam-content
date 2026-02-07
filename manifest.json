@@ -1,28 +1,19 @@
-[
-  {
-    "id": "g01",
-    "title": "Base – Mesa STEAM",
-    "objective": "Construir la base física de la Mesa STEAM como plataforma modular.",
-    "videoUrl": "https://youtu.be/JP6z7b1AtXY",
-    "resources": [
-      {
-        "type": "makerworld",
-        "label": "Planos 3D en MakerWorld",
-        "url": "https://makerworld.com/es/models/1733778-mesa-steam#profileId-1841837"
-      },
-      {
-        "type": "ar",
-        "label": "Ver en Realidad Aumentada",
-        "url": "https://tu-link-ar/aqui"
-      }
-    ],
-    "fritzingImageUrl": "https://raw.githubusercontent.com/TU_USER/TU_REPO/main/images/g01_fritzing.png",
-    "code": {
-      "language": "cpp",
-      "title": "Código ESP32 – Paso 1",
-      "content": "// Pega aquí el código si es corto",
-      "rawUrl": "https://raw.githubusercontent.com/TU_USER/TU_REPO/main/code/g01.ino"
+{
+  "id": "g01",
+  "title": "Base – Mesa STEAM",
+  "objective": "Construir la base física de la Mesa STEAM como plataforma modular.",
+  "videoUrl": "https://youtu.be/JP6z7b1AtXY",
+  "resources": [
+    {
+      "type": "makerworld",
+      "label": "Planos 3D en MakerWorld",
+      "url": "https://makerworld.com/es/models/1733778-mesa-steam#profileId-1841837"
     },
-    "pdfUrl": "https://raw.githubusercontent.com/TU_USER/TU_REPO/main/guides/g01.pdf"
-  }
-]
+    {
+      "type": "ar",
+      "label": "Ver en Realidad Aumentada",
+      "url": "https://tu-link-ar/aqui"
+    }
+  ],
+  "pdfUrl": "https://raw.githubusercontent.com/..."
+}
