@@ -27,18 +27,18 @@
   },
 
   {
-    "id": "led_ws2812b",
-    "title": "Sistema – Anillo LED WS2812B",
-    "objective": "Implementar un sistema de iluminación programable con anillo LED WS2812B y analizar su consumo energético en la Mesa STEAM.",
-    "videoUrl": "PEGA_AQUI_URL_DEL_VIDEO",
-    "resources": [],
-    "fritzingImageUrl": "",
-    "code": {
-      "language": "",
-      "title": "",
-      "content": "",
-      "rawUrl": ""
-    },
-    "pdfUrl": "PEGA_AQUI_URL_DEL_PDF"
-  }
+  "id": "led_ws2812b",
+  "title": "Sistema – Anillo LED WS2812B",
+  "objective": "Implementar un sistema de iluminación programable con anillo LED WS2812B y analizar su consumo energético en la Mesa STEAM.",
+  "videoUrl": "PEGA_AQUI_URL_DEL_VIDEO",
+  "resources": [],
+  "fritzingImageUrl": "",
+  "code": {
+    "language": "",
+    "title": "",
+    "content": "",
+    "rawUrl": ""
+  },
+  "pdfUrl": "PEGA_AQUI_URL_DEL_PDF"
+}
 ]
