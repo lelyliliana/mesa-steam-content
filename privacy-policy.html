@@ -1,71 +1,241 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Política de Privacidad – Mesa STEAM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Política de privacidad de Mesa STEAM</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 24px auto; padding: 0 16px; }
-    h1, h2 { line-height: 1.25; }
-    .muted { color: #555; }
-    code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
-    ul { padding-left: 18px; }
+    :root {
+      color-scheme: light;
+      --background: #f5f8ff;
+      --surface: #ffffff;
+      --primary: #153e90;
+      --text: #172033;
+      --muted: #566176;
+      --border: #dce3f0;
+      --notice: #fff4d6;
+      --notice-border: #c87800;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(100% - 2rem, 760px);
+      margin: 2rem auto;
+      padding: clamp(1.25rem, 4vw, 2.5rem);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+    }
+
+    header {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1,
+    h2 {
+      color: var(--primary);
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 6vw, 2.5rem);
+    }
+
+    h2 {
+      margin: 2rem 0 0.5rem;
+      font-size: 1.25rem;
+    }
+
+    p,
+    ul {
+      margin: 0.75rem 0;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration-thickness: 0.1em;
+      text-underline-offset: 0.15em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #e09b24;
+      outline-offset: 3px;
+    }
+
+    .tagline,
+    .updated {
+      color: var(--muted);
+    }
+
+    .tagline {
+      margin-top: 0.35rem;
+      font-weight: 600;
+    }
+
+    .updated {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .notice {
+      padding: 1rem;
+      background: var(--notice);
+      border-left: 4px solid var(--notice-border);
+      border-radius: 0.5rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+      }
+    }
   </style>
 </head>
 <body>
+  <main>
+    <header>
+      <h1>Política de privacidad de Mesa STEAM</h1>
+      <p class="tagline">Aprende construyendo</p>
+      <p class="updated"><strong>Última actualización:</strong> septiembre de 2026</p>
+    </header>
 
-  <h1>Política de Privacidad – Mesa STEAM</h1>
-  <p class="muted"><strong>Última actualización:</strong> 17 de febrero de 2026</p>
+    <p>
+      Esta política explica cómo Mesa STEAM maneja la información necesaria para ofrecer su experiencia educativa de electrónica, programación y robótica.
+    </p>
 
-  <p>
-    Esta Política de Privacidad describe cómo se maneja la información en la aplicación <strong>Mesa STEAM</strong>.
-    El objetivo de la app es ofrecer contenido educativo (guías y recursos) para estudiantes y docentes.
-  </p>
+    <section aria-labelledby="information">
+      <h2 id="information">1. Información que almacena la aplicación</h2>
+      <p>Mesa STEAM guarda en el dispositivo:</p>
+      <ul>
+        <li>los identificadores de los materiales seleccionados en “Mi laboratorio”;</li>
+        <li>el progreso de los proyectos, incluidos los proyectos completados o repetidos.</li>
+      </ul>
+      <p>
+        La aplicación no ofrece cuentas ni inicio de sesión. Esta información no incluye nombre, correo electrónico, ubicación, contactos, fotografías ni grabaciones.
+      </p>
+    </section>
 
-  <h2>1. Datos que recopilamos</h2>
-  <p>
-    Actualmente, <strong>Mesa STEAM no solicita, recopila ni almacena datos personales</strong> de los usuarios
-    (por ejemplo: nombre, correo electrónico, número de teléfono, ubicación precisa).
-  </p>
+    <section aria-labelledby="usage">
+      <h2 id="usage">2. Cómo se utiliza la información</h2>
+      <p>
+        Los materiales seleccionados se utilizan para recomendar proyectos que el usuario puede construir y mostrar los componentes que faltan. El progreso permite presentar la ruta de aprendizaje y sugerir el siguiente proyecto.
+      </p>
+      <p>Esta información no se vende ni se comparte con terceros.</p>
+    </section>
 
-  <h2>2. Uso de la información</h2>
-  <p>
-    Dado que la app no recopila datos personales en su versión actual, no se realiza tratamiento de datos personales
-    ni se crean perfiles de usuario.
-  </p>
+    <section aria-labelledby="local-storage">
+      <h2 id="local-storage">3. Almacenamiento local</h2>
+      <p>
+        El inventario y el progreso se almacenan localmente mediante Android DataStore. No se envían a un servidor propio y no se sincronizan entre dispositivos.
+      </p>
+      <p>
+        Android Backup y la transferencia de estos datos están deshabilitados en la configuración actual de la aplicación.
+      </p>
+    </section>
 
-  <h2>3. Compartición de datos con terceros</h2>
-  <p>
-    La aplicación <strong>no comparte datos personales</strong> con terceros, ya que no los recopila.
-  </p>
+    <section aria-labelledby="internet">
+      <h2 id="internet">4. Conexión a Internet y contenido remoto</h2>
+      <p>
+        Mesa STEAM utiliza conexión a Internet para solicitar recursos educativos remotos alojados en GitHub. Estas solicitudes no incluyen el inventario ni el progreso, pero GitHub o el proveedor de red pueden procesar información técnica habitual, como la dirección IP, conforme a sus propias políticas.
+      </p>
+      <p>
+        Puedes consultar la <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad de GitHub</a>.
+      </p>
+    </section>
 
-  <h2>4. Permisos del dispositivo</h2>
-  <p>
-    La app puede requerir permisos básicos del sistema para su funcionamiento (por ejemplo, acceso a Internet para cargar recursos).
-    En caso de que en el futuro se requieran permisos adicionales (como cámara para realidad aumentada), se informará de forma clara
-    dentro de la app y se actualizará esta política.
-  </p>
+    <section aria-labelledby="external-services">
+      <h2 id="external-services">5. Servicios y enlaces externos</h2>
+      <p>
+        La aplicación incluye enlaces a recursos como MakerWorld, GitHub y el sitio web oficial. Estos enlaces se abren en el navegador u otra aplicación compatible únicamente cuando el usuario decide seleccionarlos.
+      </p>
+      <p>
+        Al abandonar Mesa STEAM se aplican los términos y políticas del servicio externo. Mesa STEAM no controla el tratamiento de datos realizado por esos sitios.
+      </p>
+    </section>
 
-  <h2>5. Cambios futuros</h2>
-  <p>
-    En versiones futuras, la app podría incorporar funciones opcionales como:
-  </p>
-  <ul>
-    <li>Creación de cuenta e inicio de sesión.</li>
-    <li>Cuestionarios (quiz) y registro de progreso.</li>
-    <li>Retroalimentación asociada a un usuario.</li>
-  </ul>
-  <p>
-    Si estas funciones se implementan y requieren recopilación de datos, <strong>esta Política se actualizará</strong> antes de su publicación,
-    y la app reflejará dichas prácticas en la sección de “Seguridad de los datos” de Google Play.
-  </p>
+    <section aria-labelledby="permissions">
+      <h2 id="permissions">6. Permisos</h2>
+      <p>La aplicación utiliza el permiso de Internet para descargar los recursos educativos remotos disponibles.</p>
+      <p>Mesa STEAM no solicita acceso a:</p>
+      <ul>
+        <li>cámara o micrófono;</li>
+        <li>ubicación;</li>
+        <li>contactos;</li>
+        <li>almacenamiento compartido del dispositivo.</li>
+      </ul>
+    </section>
 
-  <h2>6. Contacto</h2>
-  <p>
-    Si tienes preguntas sobre esta Política de Privacidad, puedes contactarnos en:
-    <br />
-    <strong>Email:</strong> <a href="mailto:lelyliliana@gmail.com">lelyliliana@gmail.com</a>
-  </p>
+    <section aria-labelledby="tracking">
+      <h2 id="tracking">7. Publicidad, analítica y seguimiento</h2>
+      <p>
+        La versión actual no incorpora publicidad, servicios de analítica ni herramientas de seguimiento. Tampoco crea perfiles de usuario.
+      </p>
+    </section>
 
+    <section aria-labelledby="educational-use">
+      <h2 id="educational-use">8. Privacidad de menores y uso educativo</h2>
+      <p>
+        Mesa STEAM es una aplicación educativa que no requiere cuentas ni inicio de sesión. No solicita nombre, edad, correo electrónico ni otros datos personales; tampoco utiliza publicidad, analítica o seguimiento ni accede a la ubicación, cámara o micrófono. Los únicos datos que guarda son los materiales seleccionados y el progreso de los proyectos, almacenados localmente en el dispositivo. Cuando sea utilizada por menores, se recomienda el acompañamiento de padres, tutores o docentes. Esta recomendación no implica que la aplicación verifique edades ni gestione consentimientos parentales.
+      </p>
+    </section>
+
+    <section aria-labelledby="deletion">
+      <h2 id="deletion">9. Eliminación de datos</h2>
+      <p>
+        El usuario puede eliminar el inventario y el progreso borrando el almacenamiento de Mesa STEAM desde los ajustes de Android o desinstalando la aplicación. Una instalación posterior comienza sin esos datos locales.
+      </p>
+    </section>
+
+    <section aria-labelledby="changes">
+      <h2 id="changes">10. Cambios en esta política</h2>
+      <p>
+        Esta política podrá actualizarse cuando cambie el funcionamiento de Mesa STEAM o sus prácticas de privacidad. La versión vigente indicará su fecha de actualización.
+      </p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">11. Contacto</h2>
+      <p>
+        Para consultas relacionadas con esta política de privacidad o con el tratamiento de información en Mesa STEAM, puedes escribir a:
+      </p>
+      <p class="notice">
+        <a href="mailto:lelyliliana@gmail.com">lelyliliana@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      Mesa STEAM · Política de privacidad
+    </footer>
+  </main>
 </body>
 </html>
